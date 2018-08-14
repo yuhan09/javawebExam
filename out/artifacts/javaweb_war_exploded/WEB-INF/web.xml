@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>loginbean</servlet-name>
+        <servlet-class>bean.loginbean</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginbean</servlet-name>
+        <url-pattern>/loginbean</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DButil</servlet-name>
+        <servlet-class>util.DButil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DButil</servlet-name>
+        <url-pattern>/DButil</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginCheck</servlet-name>
+        <servlet-class>sevlet.LoginCheck</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>listFilm</servlet-name>
+        <servlet-class>sevlet.listFilm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>listFilm</servlet-name>
+        <url-pattern>/listFilm</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginCheck</servlet-name>
+        <url-pattern>/LoginCheck</url-pattern>
+    </servlet-mapping>
+</web-app>
